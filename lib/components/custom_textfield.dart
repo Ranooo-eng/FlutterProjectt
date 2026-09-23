@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class CustomTextfield extends StatelessWidget {
-  // kita list variabel2 yang diperlukan
   final TextEditingController txtController;
   final String myHint;
 
@@ -15,9 +14,10 @@ class CustomTextfield extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       controller: txtController,
+      keyboardType: TextInputType.number,
       decoration: InputDecoration(
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
-        hint: Text(myHint),
+        hintText: myHint, 
       ),
     );
   }
