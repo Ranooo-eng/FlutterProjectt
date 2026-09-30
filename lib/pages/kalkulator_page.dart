@@ -20,9 +20,9 @@ class KalkulatorPage extends StatelessWidget {
         child: Column(
           children: [
             CustomTextfield(txtController: txtAngka1, myHint: "input angka 1"),
-            const SizedBox(height: 10), // Memberi sedikit jarak
+            const SizedBox(height: 10), 
             CustomTextfield(txtController: txtAngka2, myHint: "input angka 2"),
-            const SizedBox(height: 20), // Memberi jarak sebelum tombol
+            const SizedBox(height: 20), 
             
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -33,7 +33,7 @@ class KalkulatorPage extends StatelessWidget {
                     int angka2 = int.parse(txtAngka2.text);
                     controller.tambah(angka1, angka2);
                   },
-                  // Teks disingkat agar tidak terjadi overflow di layar kecil
+
                   child: const Text("+"), 
                 ),
                 ElevatedButton(
