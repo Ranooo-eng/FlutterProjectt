@@ -5,6 +5,7 @@ import 'pages/kalkulator_page.dart';
 import 'pages/registration_page.dart';
 import 'pages/confirm_regristaion_page.dart';
 import 'pages/listmakanan_page.dart';
+import 'pages/mainmenu_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: "My Learning App",
-      initialRoute: Routes.listMakanan,
+      initialRoute: Routes.mainMenu,
       getPages: Routes.MyPages,
     );
   }

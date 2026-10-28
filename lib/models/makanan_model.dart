@@ -1,10 +1,15 @@
 class MakananModel {
   String namaMakanan;
   String hargaMakanan;
+  String gambarMakanan;
+  String ratingMakanan;
+  String deskripsiMakanan;
 
-  //ini konstruktor agar nanti bisa diisikan ketika membuat object
   MakananModel({
     required this.namaMakanan,
     required this.hargaMakanan,
+    required this.gambarMakanan,
+    required this.ratingMakanan,
+    required this.deskripsiMakanan,
   });
 }
