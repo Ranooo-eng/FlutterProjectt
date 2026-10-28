@@ -1,22 +1,22 @@
 import 'package:ujicoba/models/makanan_model.dart';
 import 'package:get/get.dart';
+
 class ListMakananController extends GetxController {
-  
-  List<MakananModel> listMakanan = [
+  var listMakanan = <MakananModel>[
     MakananModel(
       namaMakanan: "Soto Ayam", 
       hargaMakanan: "10.000",
       gambarMakanan: "https://www.dapurkobe.co.id/wp-content/uploads/soto-ayam.jpg",
       ratingMakanan: "4.5",
       deskripsiMakanan: "Soto ayam adalah hidangan khas Indonesia yang terbuat dari ayam yang dimasak dalam kuah kaldu yang kaya rempah."
- ),
+    ),
     MakananModel(
-     namaMakanan: "Lentog",
-     hargaMakanan: "15.000",
-     gambarMakanan: "https://image.idn.media/post/20220101/screenshot-2022-01-02-05-10-19-72-1c337646f29875672b5a61192b9010f9-6d2cbb4bbec2340f770674be006d2944-0c6c08844a9f986440835cb11b7d41d0.jpg",
+      namaMakanan: "Lentog",
+      hargaMakanan: "15.000",
+      gambarMakanan: "https://image.idn.media/post/20220101/screenshot-2022-01-02-05-10-19-72-1c337646f29875672b5a61192b9010f9-6d2cbb4bbec2340f770674be006d2944-0c6c08844a9f986440835cb11b7d41d0.jpg",
       ratingMakanan: "4.0",
       deskripsiMakanan: "Lentog adalah hidangan tradisional Indonesia yang terbuat dari ketan yang dimasak dengan santan dan disajikan dengan berbagai lauk seperti ayam, telur, dan sayuran."
-  ),
+    ),
     MakananModel(
       namaMakanan: "Pindang Kerbau",
       hargaMakanan: "15.000",
@@ -37,6 +37,6 @@ class ListMakananController extends GetxController {
       gambarMakanan: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKdhra4RR9qYk1BnI1E355JA-uQU7y5n1zSPTrtcK4BGVvjUDxkCeTU38R&s=10",
       ratingMakanan: "4.5",
       deskripsiMakanan: "Ayam geprek adalah hidangan khas Indonesia yang terdiri dari ayam goreng yang digeprek atau dihancurkan, kemudian disajikan dengan sambal pedas. Hidangan ini memiliki cita rasa yang gurih dan pedas, serta biasanya disajikan dengan nasi putih hangat. Ayam geprek sangat populer di kalangan masyarakat Indonesia, terutama di kalangan anak muda."
-   ),
-  ];
+    ),
+  ].obs;
 }

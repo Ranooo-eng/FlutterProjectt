@@ -21,8 +21,8 @@ class Routes {
     GetPage(name: confirmRegistration, page: ()=> ConfirmRegistration()),
     GetPage(name: listMakanan, page: ()=> ListMakananPage()),
     GetPage(name: detailMakanan, page: ()=> DetailMakananPage()),
-    GetPage(name: mainMenu, page: ()=> MainMenuPage()),
-    GetPage(name: menuDrawer, page: ()=> MenudrawerPage()),
+    GetPage(name: mainMenu, page: ()=> MainmenuPage()),
+    GetPage(name: menuDrawer, page: ()=> menuDrawerPage()),
 
   ];
 }

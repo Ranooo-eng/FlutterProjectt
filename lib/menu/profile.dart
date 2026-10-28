@@ -20,7 +20,6 @@ class ProfilePage extends StatelessWidget {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.black),
           onPressed: () {
-            // Aksi tombol kembali
           },
         ),
         title: const Text(
@@ -36,7 +35,6 @@ class ProfilePage extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(height: 30),
-            // Bagian Foto Profil dan Ikon Kamera
             Center(
               child: Stack(
                 children: [

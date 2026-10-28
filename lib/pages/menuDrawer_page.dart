@@ -3,16 +3,16 @@ import 'package:get/get.dart';
 import 'package:ujicoba/controller/menuDrawer_controller.dart';
 import 'package:ujicoba/controller/mainmenu_controller.dart';
 
-class MenudrawerPage extends StatelessWidget {
-  MenudrawerPage({super.key});
+class menuDrawerPage extends StatelessWidget {
+  menuDrawerPage({super.key});
 
-  final drawerController = Get.put(MenuDrawerController());
+  final drawerController = Get.put(menuDrawerController());
   final mainController = Get.find<MainMenuController>();
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      drawer: Drawer(
+    return Obx(
+      () => Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
