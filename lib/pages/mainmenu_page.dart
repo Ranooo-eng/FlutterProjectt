@@ -9,8 +9,7 @@ class MainMenuPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Obx(
-      () => Scaffold(
+    return Scaffold(
         body: IndexedStack(
           index: mainMenuController.selectedIndex.value,
           children: mainMenuController.listPages,
@@ -33,7 +32,6 @@ class MainMenuPage extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
+      );
   }
 }

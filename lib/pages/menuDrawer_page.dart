@@ -11,8 +11,8 @@ class MenudrawerPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Obx(
-      () => Drawer(
+    return Scaffold(
+      drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
