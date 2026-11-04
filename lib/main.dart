@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+import 'package:ujicoba/login_clone.dart';
 import 'package:ujicoba/routes.dart';
 import 'pages/kalkulator_page.dart';
 import 'pages/registration_page.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: "My Learning App",
-      initialRoute: Routes.mainMenu,
+      initialRoute: Routes.LoginClone,
       getPages: Routes.MyPages,
     );
   }

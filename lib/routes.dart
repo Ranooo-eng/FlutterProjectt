@@ -1,10 +1,12 @@
 import 'package:get/get.dart';
+import 'package:ujicoba/login_clone.dart';
 import 'package:ujicoba/pages/confirm_regristaion_page.dart';
 import 'package:ujicoba/pages/registration_page.dart';
 import 'package:ujicoba/pages/listmakanan_page.dart';
 import 'package:ujicoba/pages/detailmakanan_page.dart';
 import 'package:ujicoba/pages/mainmenu_page.dart';
 import 'package:ujicoba/pages/menuDrawer_page.dart';
+import 'package:ujicoba/pages/login_clone_page.dart';
 
 
 class Routes {
@@ -15,6 +17,7 @@ class Routes {
   static const String detailMakanan = "/detail_makanan";
   static const String mainMenu = "/main_menu";
   static const String menuDrawer = "/menu_drawer";
+  static const String LoginClone = "/login_clone";
 
   static final MyPages=[
     GetPage(name: registration, page: ()=> RegistrationPage()),
@@ -23,6 +26,7 @@ class Routes {
     GetPage(name: detailMakanan, page: ()=> DetailMakananPage()),
     GetPage(name: mainMenu, page: ()=> MainmenuPage()),
     GetPage(name: menuDrawer, page: ()=> menuDrawerPage()),
+    GetPage(name: LoginClone, page: ()=> LoginClonePage()),
 
   ];
 }
